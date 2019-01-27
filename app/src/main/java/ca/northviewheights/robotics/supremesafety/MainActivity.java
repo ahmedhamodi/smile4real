@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToActivity4 (View view){
-        Intent intent = new Intent (this, Quiz.class);
+        Intent intent = new Intent (this, Gallery2.class);
         startActivity(intent);
     }
 
