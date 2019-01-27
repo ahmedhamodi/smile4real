@@ -58,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
         //startActivity(intent);
     }
     public void goToActivity1 (View view){
-        CopyReadAssets("manual.pdf");
+        Intent intent = new Intent (this, Gallery4.class);
+        startActivity(intent);
     }
 
     public void goToActivity2 (View view){
@@ -107,13 +108,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void goToActivity3 (View view){
-        Intent intent = new Intent (this, DisplayMessageActivity2.class);
+    public void goToActivity4 (View view){
+        Intent intent = new Intent (this, Gallery5.class);
         startActivity(intent);
     }
 
-    public void goToActivity4 (View view){
-        Intent intent = new Intent (this, Gallery2.class);
+    public void goToActivity3 (View view){
+        Intent intent = new Intent (this, Gallery6.class);
         startActivity(intent);
     }
 
