@@ -57,7 +57,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/rounded_corner"
-        android:onClick="goToActivity5"
+        android:onClick="goToActivity6"
         android:text="CATS"
         android:textColor="@android:color/white"
         android:textSize="22sp"

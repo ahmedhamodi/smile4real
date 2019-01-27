@@ -98,4 +98,9 @@ public class DisplayMessageActivity extends AppCompatActivity {
         Intent intent = new Intent (this, Gallery.class);
         startActivity(intent);
     }
+
+    public void goToActivity6 (View view){
+        Intent intent = new Intent (this, Gallery2.class);
+        startActivity(intent);
+    }
 }

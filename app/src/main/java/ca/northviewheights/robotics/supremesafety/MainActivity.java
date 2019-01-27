@@ -62,7 +62,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToActivity2 (View view){
-        CopyReadAssets("brochure.pdf");
+        Intent intent = new Intent (this, Gallery3.class);
+        startActivity(intent);
     }
 
     private void CopyReadAssets(String name)
@@ -118,6 +119,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToActivity5 (View view){
         Intent intent = new Intent (this, Gallery.class);
+        startActivity(intent);
+    }
+
+    public void goToActivity6 (View view){
+        Intent intent = new Intent (this, Gallery2.class);
         startActivity(intent);
     }
 

@@ -35,7 +35,7 @@ public class Gallery2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gallery);
+        setContentView(R.layout.activity_gallery2);
 
         viewPager = (ViewPager)findViewById(R.id.mvieww2);
         adapter = new ImageAdapter(Gallery2.this,GalImages);
