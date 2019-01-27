@@ -3,4 +3,8 @@
     <color name="colorPrimary">#ED1B24</color>
     <color name="colorPrimaryDark">#ED1B24</color>
     <color name="colorAccent">#ED1B24</color>
+    <color name="colorPink">#D13ECE</color>
+    <color name="darkBrown">#59242A</color>
+    <color name="light_b">#33ACC7</color>
+    <color name="puple">#8428B2</color>
 </resources>

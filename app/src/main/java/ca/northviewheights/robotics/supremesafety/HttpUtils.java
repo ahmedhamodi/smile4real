@@ -11,7 +11,7 @@ public class HttpUtils {
     private static final String BASE_URL = "https://quotes.rest/qod";
 
     private static TextView tv;
-
+    private static TextView author_tv;
     private static AsyncHttpClient client = new AsyncHttpClient();
 
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
@@ -34,8 +34,9 @@ public class HttpUtils {
         return BASE_URL;
     }
 
-    public static String getQuote(TextView qNumber){
+    public static String getQuote(TextView qNumber, TextView qNumber1){
         tv = qNumber;
+        author_tv = qNumber1;
         RequestParams rp = new RequestParams();
         rp.add("category","inspire");
         JsonHttpHandler jp = new JsonHttpHandler();
@@ -80,6 +81,7 @@ public class HttpUtils {
 
         try {
             tv.setText(obj.getJSONObject("contents").getJSONArray("quotes").getJSONObject(0).get("quote").toString());
+            author_tv.setText(obj.getJSONObject("contents").getJSONArray("quotes").getJSONObject(0).get("author").toString());
         } catch (JSONException e) {
             e.printStackTrace();
         }

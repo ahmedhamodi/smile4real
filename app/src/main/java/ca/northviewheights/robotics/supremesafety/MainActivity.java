@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.textView2);
         textView.setTypeface(typeface);
         TextView qNumber = (TextView) findViewById(R.id.textView2);
+        TextView qNumber1 = (TextView) findViewById(R.id.author);
 //        qNumber.setText( HttpUtils.getQuote());
-        HttpUtils.getQuote(qNumber);
+        HttpUtils.getQuote(qNumber,qNumber1);
 //        TextView textView2 = (TextView) findViewById(R.id.textView4);
 //        textView2.setTypeface(typeface);
 //        TextView textView3 = (TextView) findViewById(R.id.textView5);
