@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/Futura.ttf");
         TextView textView = (TextView) findViewById(R.id.textView2);
         textView.setTypeface(typeface);
+        TextView qNumber = (TextView) findViewById(R.id.textView2);
+//        qNumber.setText( HttpUtils.getQuote());
+        HttpUtils.getQuote(qNumber);
 //        TextView textView2 = (TextView) findViewById(R.id.textView4);
 //        textView2.setTypeface(typeface);
 //        TextView textView3 = (TextView) findViewById(R.id.textView5);
@@ -48,5 +51,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent (this, DisplayMessageActivity.class);
         startActivity(intent);
     }
+
 
 }
