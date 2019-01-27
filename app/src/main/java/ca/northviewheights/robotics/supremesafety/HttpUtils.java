@@ -56,8 +56,8 @@ public class HttpUtils {
                 "  \"contents\": {\n" +
                 "    \"quotes\": [\n" +
                 "      {\n" +
-                "        \"quote\": \"When I was a little kid, I was really scared of the dark. But then I came to understand, dark just means the absence of photons in the visible wavelength—400 to 700 nanometers. Then I thought, well it’s really silly to be afraid of a lack of photons. Then I wasn’t afraid of the dark anymore after that.\",\n" +
-                "        \"author\": \"Elon Musk\",\n" +
+                "        \"quote\": \"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.\",\n" +
+                "        \"author\": \"Helen Keller\",\n" +
                 "        \"length\": \"303\",\n" +
                 "        \"tags\": [\n" +
                 "          \"fear\",\n" +
