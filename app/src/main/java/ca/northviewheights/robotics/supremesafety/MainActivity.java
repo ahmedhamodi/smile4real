@@ -1,10 +1,13 @@
 package ca.northviewheights.robotics.supremesafety;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +26,8 @@ import java.io.OutputStream;
 
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +52,20 @@ public class MainActivity extends AppCompatActivity {
 //        website.setMovementMethod(LinkMovementMethod.getInstance());
 //        String link = "<a href='https://rebrand.ly/supreme'> Website </a>";
 //        website.setText(Html.fromHtml(link));
+        button = (Button) findViewById(R.id.buttonCall);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:014034025028"));
+
+                if (ActivityCompat.checkSelfPermission(MainActivity.this,
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                startActivity(callIntent);
+            }
+        });
     }
 
     /** Called when the user taps the Send button */
