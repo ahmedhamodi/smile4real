@@ -44,6 +44,7 @@ public class JsonHttpHandler extends TextHttpResponseHandler {
 
 
     private boolean useRFC5179CompatibilityMode = true;
+
     public JSONObject response_string = new JSONObject();
 
     /**
